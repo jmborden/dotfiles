@@ -1,3 +1,7 @@
+alias tail='tail -f -n0'
+alias e='mvim'
+alias mysql='mysql -uroot'
+
 # cd
 alias ..='cd ..'
 
@@ -9,11 +13,13 @@ alias la='ls -A'
 
 # git
 alias gl='git pull'
+alias gf='git fetch'
 alias gp='git push'
 alias gd='git diff'
-alias gc='git commit'
+alias gdv='vim <(git diff)'
+alias gci='git commit'
 alias gca='git commit -a'
-alias gco='git checkout'
+alias gc='git checkout'
 alias gb='git branch'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
